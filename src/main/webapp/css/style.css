@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+/* =====================================
+どこつぶ - Pink & Lavender Modern UI
+===================================== */
+
+/* リセット */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* 背景 */
+body {
+
+min-height: 100vh;
+
+font-family:
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+
+background:
+    linear-gradient(
+        135deg,
+        #fff0f5 0%,
+        #f8e8ff 50%,
+        #ede7ff 100%
+    );
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 2vh 2vw;
+
+}
+
+/* コンテンツ領域 */
+.container {
+
+width: 90%;
+max-width: 900px;
+min-width: 320px;
+
+background: rgba(255,255,255,0.92);
+
+backdrop-filter: blur(10px);
+
+border: 1px solid rgba(255,182,193,0.3);
+
+border-radius: 24px;
+
+padding: 40px;
+
+box-shadow:
+    0 15px 35px rgba(214,51,132,0.12);
+
+animation: fadeIn 0.5s ease;
+
+}
+
+/* 見出し */
+h1 {
+
+text-align: center;
+
+font-size: clamp(28px, 4vw, 44px);
+
+color: #d63384;
+
+margin-bottom: 30px;
+
+}
+
+/* 段落 */
+p {
+
+line-height: 1.8;
+
+margin-bottom: 10px;
+
+}
+
+/* ラベル */
+label {
+
+display: block;
+
+margin-bottom: 8px;
+
+font-weight: bold;
+
+color: #6f42c1;
+
+}
+
+/* フォーム */
+form {
+
+margin-top: 20px;
+
+}
+
+/* 入力欄 */
+input[type="text"],
+input[type="password"] {
+
+width: 100%;
+
+padding: 14px 18px;
+
+margin-bottom: 15px;
+
+border: 1px solid #e6d8f0;
+
+border-radius: 12px;
+
+font-size: 16px;
+
+background: #ffffff;
+
+transition: all 0.3s ease;
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+
+outline: none;
+
+border-color: #ff8ab6;
+
+box-shadow:
+    0 0 0 4px rgba(255,138,182,0.2);
+
+}
+
+/* ボタン */
+input[type="submit"],
+.btn {
+
+width: 100%;
+
+padding: 14px;
+
+border: none;
+
+border-radius: 50px;
+
+cursor: pointer;
+
+color: white;
+
+font-size: 16px;
+
+font-weight: bold;
+
+background:
+    linear-gradient(
+        135deg,
+        #ff6fa5,
+        #c471ed
+    );
+
+transition: all 0.3s ease;
+
+}
+
+input[type="submit"]:hover,
+.btn:hover {
+
+transform: translateY(-2px);
+
+box-shadow:
+    0 8px 20px rgba(255,111,165,0.3);
+
+}
+
+/* リンク */
+a {
+
+color: #d63384;
+
+text-decoration: none;
+
+font-weight: bold;
+
+}
+
+a:hover {
+
+color: #b52c6d;
+
+text-decoration: underline;
+
+}
+
+/* アイコン */
+i {
+
+margin-right: 8px;
+
+}
+
+/* ユーザー情報 */
+.user-info {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+flex-wrap: wrap;
+
+gap: 10px;
+
+padding-bottom: 15px;
+
+margin-bottom: 20px;
+
+border-bottom: 1px solid #f0dff4;
+
+}
+
+/* メッセージ */
+.message {
+
+background: #fdf3ff;
+
+border-left: 5px solid #c471ed;
+
+color: #6f42c1;
+
+padding: 14px;
+
+border-radius: 10px;
+
+margin: 15px 0;
+
+}
+
+/* 成功メッセージ */
+.success {
+
+text-align: center;
+
+color: #2e7d32;
+
+}
+
+/* エラーメッセージ */
+.error {
+
+background: #ffeaea;
+
+border-left: 5px solid #e53935;
+
+color: #c62828;
+
+padding: 14px;
+
+border-radius: 10px;
+
+margin: 15px 0;
+
+}
+
+/* 更新リンク */
+.refresh {
+
+margin-bottom: 15px;
+
+}
+
+/* タイムライン */
+.timeline {
+
+margin-top: 25px;
+
+}
+
+/* 投稿カード */
+.mutter {
+
+background: #ffffff;
+
+border-radius: 18px;
+
+padding: 18px;
+
+margin-bottom: 15px;
+
+border: 1px solid #f1e6f8;
+
+box-shadow:
+    0 3px 10px rgba(0,0,0,0.06);
+
+transition: all 0.3s ease;
+
+}
+
+.mutter:hover {
+
+transform: translateY(-3px);
+
+box-shadow:
+    0 10px 20px rgba(212,51,132,0.12);
+
+}
+
+/* 投稿者 */
+.mutter-user {
+
+font-weight: bold;
+
+color: #d63384;
+
+margin-bottom: 8px;
+
+font-size: 15px;
+
+}
+
+/* 投稿内容 */
+.mutter-text {
+
+font-size: 16px;
+
+line-height: 1.7;
+
+color: #444;
+
+}
+
+/* 中央寄せ */
+.center {
+
+text-align: center;
+
+}
+
+/* ログアウトアイコン */
+.logout-icon {
+
+font-size: 80px;
+
+color: #c471ed;
+
+margin-bottom: 20px;
+
+}
+
+/* フェードイン */
+@keyframes fadeIn {
+
+from {
+
+    opacity: 0;
+
+    transform: translateY(20px);
+}
+
+to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+
+.container {
+
+    width: 95%;
+
+    padding: 25px;
+}
+
+h1 {
+
+    font-size: 28px;
+}
+
+.user-info {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+}
