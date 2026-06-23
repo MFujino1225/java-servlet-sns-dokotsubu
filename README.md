@@ -37,15 +37,15 @@ Servlet/JSPの知識を活用し、MVCモデルに沿って実装しています
 
 ## システム構成
 
-ブラウザ
-　↓
-Servlet（Controller）
-　↓
+ブラウザ<br>
+　↓<br>
+Servlet（Controller）<br>
+　↓<br>
 アプリケーションスコープ
-（つぶやきデータ保持）
-　↓
-JSP（View）
-　↓
+（つぶやきデータ保持）<br>
+　↓<br>
+JSP（View）<br>
+　↓<br>
 ブラウザ
 
 
