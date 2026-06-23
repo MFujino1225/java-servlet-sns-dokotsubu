@@ -3,7 +3,7 @@
 Java Servlet/JSPを使用して作成したSNS風Webアプリケーションです。
 
 
-## 概要
+## アプリケーション概要
 
 ユーザーがログインし、つぶやきを投稿・閲覧できるアプリです。
 Webアプリケーション開発の基礎を学習する目的で作成しました。
@@ -14,16 +14,6 @@ Servlet/JSPの知識を活用し、MVCモデルに沿って実装しています
 
 全ユーザー共通で「1234」に設定しています。
 
-
-## 使用技術
-
-* Java
-* Servlet
-* JSP
-* HTML
-* CSS
-* Apache Tomcat
-* Git / GitHub
 
 ## 主な機能
 
@@ -46,9 +36,42 @@ Servlet/JSPの知識を活用し、MVCモデルに沿って実装しています
 ![投稿画面](docs/images/post.png)
 
 
+## システム構成
+
+ブラウザ
+↓
+Servlet（Controller）
+↓
+アプリケーションスコープ
+（つぶやきデータ保持）
+↓
+JSP（View）
+↓
+ブラウザ
+
+
+### データ管理について
+
+本アプリは学習目的で作成しているため、データベースは使用せず、
+ServletContext（アプリケーションスコープ）に投稿データを保持しています。
+サーバー再起動時にはデータは消去されます。
+
+
+## 使用技術
+
+* Java
+* Servlet
+* JSP
+* HTML
+* CSS
+* Apache Tomcat
+* Git / GitHub
+
+
 ## 実行環境
 
 * Java 17
+* Servlet / JSP
 * Tomcat 9
 * Eclipse IDE
 
